@@ -1,5 +1,10 @@
 /*Overall Formatting*/
 
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
 body {
     background-color: #383D49;
 }
@@ -339,17 +344,43 @@ p {
 
 /*RWD*/
 
-@media only screen and (max-width: 600){
-    .flexContainer {
-        display: column;
-    }
-    .flexContainer div {
-        width: 100%;
-    }
-    .workGrid {
+@media only screen and (max-width: 400){
+    .task-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 25% auto auto;
-        grid-template-areas: "WorkImage1" "WorkDescription1" "WorkImage2" "WorkDescription2" "WorkImage3" "WorkDescription3";
+        grid-template-columns: 3fr 1fr;  
+        grid-template-rows: auto;
+        grid-template-areas: "task-header" "task-button";
+    }
+
+    .activity-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "activity-report" "activity-progress";
+    }
+
+    .accountability-grid1 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-template-areas: "my-impact1" "my-neighborhood1";
+    }
+
+    .accountability-grid2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-template-areas: "my-impact2" "my-neighborhood2";
+    }
+
+    .nav-bar-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "nav-bar1" "nav-bar2" "nav-bar3" "nav-bar4"
+        "nav-bar5" "nav-bar6" "nav-bar7" "nav-bar8";
     }
 }
