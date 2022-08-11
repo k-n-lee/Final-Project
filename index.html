@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SustainABLE</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/fontawesome/css/all.css" type="text/css" rel="stylesheet">
+
+    <!-- Import Roboto Font -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1>My Sustainability Habits</h1>
+    </section>
+
+    <!-- Upcoming Tasks -->
+    <section>
+        <div class="task-grid">
+            <div class="task-header">
+                <h2>Upcoming Tasks</h2>
+            </div>
+            <div class="task-button">
+                <button id="enter">
+                    <img src="images/plus.png" id="task-add">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div class="inputContainer">
+          <input type="input" id="todoItem">
+        </div>
+        <div id="todoList"></div>
+        <div class="help"><h5>View All</h5></div>
+    </section>
+
+    <!-- My Activity -->
+    <section>
+        <h2 id="my-activity">My Activity</h2>
+        <div class="activity-all">
+            <img src="images/activity-back.jpg" id="activity-back">
+            <div class="activity-grid">
+                <div class="activity-report">
+                    <h4>This Week</h4>
+                    <p>4 tasks planned</p>
+                    <p>3 tasks completed</p>
+                    <p>3 practices tracked in tasks</p>
+                </div>
+                <div class="activity-progress">
+                    <img src="images/activity-circle.png" id="activity-circle">
+                </div>
+            </div>
+        </div>
+        <div class="help"><h5>See More</h5></div>
+    </section>
+
+    <!-- My Impact and My Neighborhood -->
+    <section>
+        <div class="accountability-all">
+            <div class="accountability-grid1">
+                <div class="my-impact1">
+                    <img src="images/impact.jpg" class="img-button">
+                </div>
+                <div class="my-neighborhood1">
+                    <img src="images/neighborhood.jpg" class="img-button">
+                </div>
+            </div>
+            <div class="accountability-grid2">
+                <div class="my-impact2">
+                    <h2 class="h2-button">My<br>Impact</h2>
+                </div>
+                <div class="my-neighborhood2">
+                    <h2 class="h2-button">My<br>Neighborhood</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>   
+
+    <!-- Nav Bar -->
+    <footer>
+        <div class="nav-bar-grid">
+            <div class="nav-bar1">
+                <img src="images/nav-home.png" class="img-nav">
+            </div>
+            <div class="nav-bar2">
+                <img src="images/nav-habits.png" class="img-nav">
+            </div>
+            <div class="nav-bar3">
+                <img src="images/nav-practices.png" class="img-nav">
+            </div>
+            <div class="nav-bar4">
+                <img src="images/nav-settings.png" class="img-nav">
+            </div>
+            <div class="nav-bar5">
+                <p class="text-nav">Home</p>
+            </div>
+            <div class="nav-bar6">
+                <p class="text-nav">My<br>Habits</p>
+            </div>
+            <div class="nav-bar7">
+                <p class="text-nav">Discover<br>Practices</p>
+            </div>
+            <div class="nav-bar8">
+                <p class="text-nav">Settings</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Link to JS file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

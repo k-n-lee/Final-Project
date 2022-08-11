@@ -1,0 +1,355 @@
+/*Overall Formatting*/
+
+body {
+    background-color: #383D49;
+}
+
+h1 {
+    font-size: 22pt;
+    font-family: 'Roboto', sans-serif;
+    color: #83B28D;
+}
+
+h2 {
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    color: #83B28D;
+}
+
+.h2-button {
+    color: #000000;
+    padding-top: 50px;
+}
+
+h4 {
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;      
+}
+
+h5 {
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    color: #D7E6E1;
+    position: relative;
+    left: 85%;
+}
+
+.help {
+    max-width: 500px;
+    width: 100%;
+}
+
+p {
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;   
+}
+
+/*Upcoming Tasks*/
+
+.task-grid {
+    display: grid;
+    grid-template-columns: 460px 200px;
+    grid-template-rows: 50px;
+    grid-template-areas: "task-header" "task-button";
+    font-family: 'Roboto', sans-serif;
+}
+
+.task-header {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.task-button {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+#enter {
+    padding: 2%;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 70%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 50%;
+}
+
+#task-add {
+    height: 90%;
+    width: 90%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: left;
+    flex-direction:column;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#todoItem {
+    width: 96%;
+    padding: 2%;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#todoList {
+    width: 100%;
+    max-width: 500px;
+}
+
+.task {
+    display: flex;
+    padding: 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-circle {
+    padding-right: 10px;
+}
+
+.done {
+    color: #83B28D;
+    border: 2px solid #83B28D;
+    background: #D7E6E1;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-check-circle {
+    padding-right: 10px;
+}
+
+.x {
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+/*My Activity*/
+
+.activity-all {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#activity-back {
+    height: 225px;
+    width: 500px;
+    border-radius: 10px;
+    opacity: 25%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 275px 225px;
+    grid-template-rows: 225px;
+    grid-template-areas: "activity-report" "activity-progress";
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.activity-report {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    padding-left: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.activity-progress {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#activity-circle {
+    height: 415px;
+    width: 400px;
+    position: relative;
+    bottom: 42%;
+    right: 40%;
+}
+
+/*My Impact and My Neighborhood*/
+
+.accountability-all {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.accountability-grid1 {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 210px;
+    grid-column-gap: 20px;
+    grid-template-areas: "my-impact1" "my-neighborhood1";
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.my-impact1 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.my-neighborhood1 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-button {
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+    border-radius: 10px;
+}
+
+.accountability-grid2 {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 210px;
+    grid-column-gap: 20px;
+    grid-template-areas: "my-impact2" "my-neighborhood2";
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.my-impact2 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.my-neighborhood2 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Nav Bar*/
+
+.nav-bar-grid {
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-template-rows: 60px 70px;
+    grid-template-areas:
+    "nav-bar1" "nav-bar2" "nav-bar3" "nav-bar4"
+    "nav-bar5" "nav-bar6" "nav-bar7" "nav-bar8";
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar1 {
+    border-top-left-radius: 18px;
+}
+
+.nav-bar4 {
+    border-top-right-radius: 18px;
+}
+
+.nav-bar1, .nav-bar2, .nav-bar3, .nav-bar4 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-bar5, .nav-bar6, .nav-bar7, .nav-bar8 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-nav {
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.text-nav {
+    font-size: 12pt;
+    padding-bottom: 10px;
+}
+
+/*RWD*/
+
+@media only screen and (max-width: 600){
+    .flexContainer {
+        display: column;
+    }
+    .flexContainer div {
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 25% auto auto;
+        grid-template-areas: "WorkImage1" "WorkDescription1" "WorkImage2" "WorkDescription2" "WorkImage3" "WorkDescription3";
+    }
+}
